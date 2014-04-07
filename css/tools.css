@@ -1,0 +1,569 @@
+/**
+ * Projekt Vorlagenkatalog
+ *
+ * Tools-Stylesheets
+ *
+ * Spezielle CSS-Anweisungen, die fuer Inhalte aus interaktiven
+ *  und optionalen  Anwendungen eingesetzt werden.
+ *
+ * @copyright       Copyright 2005-2011, RRZE
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/)
+ * @link            http://www.vorlagen.uni-erlangen.de
+ * @package         css
+ * @version         3.0
+ * @lastmodified    08/2011
+ */
+
+@media screen, projection
+{
+	/*  ------------------------------------------------------
+	INHALTSUEBERSICHT
+	--------------------------------------------------------*/
+	div#inhaltsuebersicht ul {
+		list-style-type: none;
+		line-height: 200%;
+	}
+
+	div#inhaltsuebersicht ul li a dfn {font-style: normal;}
+
+
+	/*  ------------------------------------------------------
+	GLOSSAR
+	--------------------------------------------------------*/
+	div#glossar div.AlphaNavigation ul {
+		list-style-type: none;
+		margin: 0 0 20px 0;
+		padding:0;
+	}
+
+	div#glossar div.AlphaNavigation ul li {
+		display: inline;
+		padding: 0 10px 0 0;
+		font-weight: bold;
+	}
+	div.alphabet-index div.indexliste-nachoben  {font-size: 0.76em;}
+	div#inhaltsuebersicht  div.alphabet-liste ul {
+		list-style-type: none;
+		margin: 0 0 20px 0;
+		padding:0;
+	}
+
+	div#inhaltsuebersicht  div.alphabet-liste ul li {
+		font-weight: bold;
+		display: inline;
+		padding: 0 10px 0 0;
+	}
+
+	/*  ------------------------------------------------------
+	INDEXLISTE-NACHOBEN
+	--------------------------------------------------------*/
+	div.indexliste-nachoben {border-color: #d1d1d1;}
+
+	/*  ------------------------------------------------------
+	Embeddings ueber die UnivIS-API
+	--------------------------------------------------------*/
+	#univis-personenindex .org .organization-name {
+		display: none;
+	}
+
+	#univis-personenindex  .dumpdata {
+		font-size: 0.8em;
+		background-color: #eee;
+		border: 1px solid #aaa;
+	}
+
+	#univis-personenindex ul.groupindex-alpha {
+		padding: 0.5em;
+		background-color: #eaeaea;
+		border: 1px solid #ccc;
+	}
+	#univis-personenindex ul.groupindex-alpha li {
+		display: inline;
+		list-style: none;
+		padding: 0.2em;
+	}
+	#univis-personenindex ul.groupindex-alpha li a {
+		border: 4px solid #ccc;
+
+	}
+	#univis-personenindex ul.groupindex-alpha li a:hover {
+	   border: 4px solid #bf007f;
+	}
+
+	#univis-personenseite address {
+		margin-left: 2em;
+	}
+	#univis-personenseite ul.kontakt {
+		list-style-position: inside;
+	}
+	#univis-personenseite ul.kontakt li {
+		margin-left: 2em;
+	}
+	#univis-personenseite div.publications li h3,
+	#univis-personenseite div.lectures li h3
+	 {
+		display: inline;
+		background: #f9f9f9;
+		margin: 0.5em;
+		padding: 0;
+	}
+	#univis-personenseite div.publications div.pubdetails,
+	#univis-personenseite div.lectures div.lvdetails {
+		display: inline;
+		margin-left: 1em;
+	}
+
+	/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+	/* Meldungen aus dem Feed-Import-Tools */
+	/* Ergaenzungen zu den RSS-News */
+	/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+	div.feedrahmen:after {
+		clear:both;
+		content:".";
+		display:block;
+		font-size:0;
+		height:0;
+		visibility:hidden;
+	 }
+
+	div.feedrahmen h2 {
+		padding: 0px 6px 0 0px;
+		margin-left: 5px !important;
+		font-weight:700;
+		line-height:140%;
+	}
+
+	div.feedrahmen .feedeintrag {
+		margin: 0.5em 0;
+		font-size: 0.95em;
+		font-family: Verdana, sans-serif;
+		line-height:1.5em;
+		padding: 0.5em 0;
+		color:#484E46;
+		width: 50%;
+		float: left;
+	}
+
+	div.feedrahmen .feedeintrag:nth-child(even) {
+		clear: both;
+	}
+
+	div.feedrahmen div:first-child, div.feedrahmen div:nth-child(even):last-child {
+		width: 100%;
+	}
+
+	div.feedrahmen div:first-child h2, div.feedrahmen .feedeintrag:nth-child(even) h2,
+	div.feedrahmen div:first-child h3, div.feedrahmen .feedeintrag:nth-child(even) h3,
+	div.feedrahmen div:first-child h4, div.feedrahmen .feedeintrag:nth-child(even) h4,
+	div.feedrahmen div:first-child h5, div.feedrahmen .feedeintrag:nth-child(even) h5,
+	div.feedrahmen div:first-child p, div.feedrahmen .feedeintrag:nth-child(even) p {
+		margin-left: 0 !important;
+	}
+
+	.feedeintrag img {
+		width: 50%;
+		max-width: 150px;
+		height: auto;
+		max-height: 150px;
+		float: left;
+		margin: 0 10px 10px 0 !important;
+		border: 0;
+	}
+
+	.feedeintrag p {
+		margin-left: 5px !important;
+		display: block;
+	}
+
+	div.feedeintrag h3,
+	div.feedeintrag h4,
+	div.feedeintrag h5{
+		line-height:120%;
+		padding: 0.5em 0;
+		display: block;
+		font-weight: bold;
+		margin-left: 5px !important;
+	}
+
+
+
+	div.feedeintrag p.datum,
+	div.feedeintrag div.feedcontent p.datum,
+	div.feedeintrag div.feedlink p.datum
+	 {
+		color: #555;
+		font-style: oblique;
+	}
+	div.feedeintrag p strong {
+		font-weight: bold;
+	}
+
+	.feedrahmen .jahreskalender {
+			width: 660px;
+			}
+	.feedrahmen .jahreskalender h2 {
+		   font-size: 1.2em ;
+		   padding: 0.3em;
+		   display: block;
+			}
+	.feedrahmen .jahreskalender table {
+			display: inline;
+			min-width: 220px;
+			margin: 5px;
+			}
+	.feedrahmen table.calendar {
+			border: 1px solid #eee;
+			border-spacing: 0;
+			empty-cells: show;
+			border-collapse: separate;
+			border: 1px solid #eee;
+			background-color: white;
+		text-align:center;
+			}
+	.feedrahmen table.calendar caption {
+			text-align: center;
+			font-weight: bold;
+			}
+	.feedrahmen table.calendar th {
+			background-color: #ddd;
+			}
+	.feedrahmen table.calendar td {
+		text-align: left;
+			border: 1px solid #eee;
+			padding: 2px;
+			}
+	.feedrahmen table.calendar td.weekend {
+			background-color: #eee;
+			border: 1px solid #ddd;
+			}
+	.feedrahmen table.calendar td.current {
+			border: 1px solid red;
+			font-weight:bold;
+		color:#c00;
+			}
+	.feedrahmen table.calendar td:hover {
+			border: 1px solid #ccc;
+			background-color: #ddd;
+			}
+	.feedrahmen table.calendar td.used {
+		font-weight:bold;
+		background-color: #ccc;
+			}
+	.feedrahmen table.empty caption {
+		color:#ccc;
+			}
+	.feedrahmen table.empty th{
+		color:#fff;
+			}
+	.feedrahmen table.current caption{
+		color:#c00;
+			}
+	div.feedrahmen .feedeintrag ul {
+	font-size:1em;
+	}
+
+
+	/* Class: FD-HEADLINER (headline color background) */
+
+	div.fd-headliner .feedeintrag {
+		width: 49%;
+	}
+
+	div.fd-headliner .feedeintrag p a:last-child {
+		display: block;
+		text-align: left;
+		margin-top: 10px;
+		padding: 5px 0;
+	}
+
+	div.fd-headliner .feedeintrag:nth-child(even) {
+		margin-right: 2%;
+	}
+
+	div.fd-headliner .feedeintrag h3 {
+		padding: 10px;
+		background-color: #F0F0F0;
+		border-left: 3px solid #0E4584;
+	}
+
+	div.fd-headliner .feedeintrag:first-child h3 {
+		padding: 10px;
+		background-color: #F0F0F0;
+		border-left: 0;
+		border-bottom: 3px solid #0E4584;
+	}
+
+
+
+
+	/* Class: FD-GRADIENT (Linear gradient background) */
+
+	div.fd-gradient .feedeintrag {
+		width: 49%;
+		background: linear-gradient(top, #F0F0F0, #FFF);
+		background: -moz-linear-gradient(top, #F0F0F0, #FFF);
+		background: -o-linear-gradient(top, #F0F0F0, #FFF);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F0F0F0), color-stop(1, #FFF));
+		box-shadow: 0 -3px 0 #DDD;
+		-moz-box-shadow: 0 -3px 0 #DDD;
+		-webkit-box-shadow: 0 -3px 0 #DDD;
+		-o-box-shadow: 0 -3px 0 #DDD;
+		border-top: 1px solid #D1D1D1;
+	}
+
+	div.fd-gradient .feedeintrag p a:last-child {
+		display: block;
+		text-align: left;
+		margin-top: 10px;
+		padding: 5px 0;
+	}
+
+	div.fd-gradient .feedeintrag:nth-child(even) {
+		margin-right: 2%;
+	}
+
+	div.fd-gradient .feedeintrag h2, div.fd-gradient .feedeintrag h3, div.fd-gradient .feedeintrag h4, div.fd-gradient .feedeintrag h5, div.fd-gradient .feedeintrag p {
+		margin-left: 8px !important;
+		margin-right: 8px !important;
+	}
+
+
+	/*  ------------------------------------------------------
+	FOOTER - FOOTERINFOS - ZUSATZINFO - STYLESWITCHER
+	--------------------------------------------------------*/
+	div#footer div#footerinfos div#zusatzinfo div.styleswitcher ul {
+		margin: 0 0 12px 0;
+	}
+	div#footer div#footerinfos div#zusatzinfo div.styleswitcher ul  li a {
+		font-size: 0.76em;
+		text-decoration: underline;
+		padding: 0 0 0 8px;
+	}
+
+	div#footer div#footerinfos div#zusatzinfo div.styleswitcher ul  li a:focus,
+	div#footer div#footerinfos div#zusatzinfo div.styleswitcher ul  li a:active {
+		font-weight: bold;
+	}
+
+	/*  ------------------------------------------------------
+	MELDUNGEN
+	--------------------------------------------------------*/
+	div.meldungen-rechts, div.meldungen-links{
+	width: 48%;
+	float:left;
+	}
+
+
+	div.meldungen {
+	margin: 5px 10px 0px 0;
+	/*inline-styles*/
+	/*padding:4px;*/
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+
+	}
+
+	div.meldungen h2 {
+	padding: 0px 6px 0 0px;
+	margin: 0px 0 0px 0;
+	font-size:0.76em !important;
+	font-weight:700;
+	line-height:140%;
+	}
+
+	div.meldungen p {
+	font-size: 0.76em !important;
+	margin: -2px  0 14px 0 !important;
+	padding: 0px 6px 0 0px;
+	line-height: 140% !important;
+	}
+	div.meldungen img {
+	float:right;
+	margin:0px 0px 0px 5px;
+	}
+
+
+
+
+
+	/*  ------------------------------------------------------
+	Embeddings ueber die Uniportal-API
+	--------------------------------------------------------*/
+
+	/* Umrandender Bereich */
+	.uniportal {
+		margin: 0.1em;
+	}
+
+	.uniportal table {
+		margin-bottom: 0.2em;
+	}
+	/* Banner */
+	p.uniportal-banner {
+		font-size: 0.7em;
+		text-align: left;
+		font-style: oblique;
+		margin: 0;
+		padding: 0;
+	}
+	table h3.uniportal-file-name,
+	table h3.uniportal-bookmark-name {
+		font-size: 1em;;
+		margin: 0;
+	}
+	p.uniportal-file-info {
+		margin: 0;
+	}
+
+	.uniportal table thead tr th {
+		border-bottom: 1px solid #aaa;
+	}
+
+	.uniportal ul li  {
+		margin: 0.1em;
+	}
+	li h3.uniportal-file-name {
+		margin-top: 5px;
+	}
+	p.uniportal-bookmark-name {
+		margin: 0 0 0.1em 0;
+		padding: 0;
+		font-weight: bold;
+	}
+	p.uniportal-bookmark-description,
+	p.uniportal-file-description {
+		margin: 0 0 10px 0;
+		padding: 0;
+	}
+	p.uniportal-file-size,
+	p.uniportal-file-created  {
+		margin: 0;
+		padding: 0;
+	}
+	p.shorturl,
+	table p span.shorturl,
+	p.uniportal-file-size,
+	p.uniportal-file-created  {
+		margin: 0;
+		color: #555;
+		font-style: oblique;
+	}
+	.uniportal table p   {
+		 margin-bottom: 0px;
+	}
+
+
+	/* Spezialstylesheet fuer Ausgaben aus UnivIS */
+	/* $Id: tools.css,v 1.2 2012/06/18 09:59:32 unrz228 Exp $ */
+
+
+
+	#univis-personenindex {
+	}
+
+	#univis-personenindex .org .organization-name {
+		display: none;
+	}
+
+	#univis-personenindex  .dumpdata {
+		font-size: 0.8em;
+		background-color: #eee;
+		border: 1px solid #aaa;
+	}
+
+	#univis-personenindex ul.groupindex-alpha {
+		padding: 0.5em;
+		background-color: #eaeaea;
+		border: 1px solid #ccc;
+	}
+	#univis-personenindex ul.groupindex-alpha li {
+		display: inline;
+		list-style: none;
+		padding: 0.2em;
+	}
+	#univis-personenindex ul.groupindex-alpha li a {
+		border: 4px solid #ccc;
+
+	}
+	#univis-personenindex ul.groupindex-alpha li a:hover {
+	   border: 4px solid #bf007f;
+
+	}
+
+
+	#univis-personenseite address {
+		margin-left: 2em;
+	}
+	#univis-personenseite ul.kontakt {
+		list-style-position: inside;
+	}
+	#univis-personenseite ul.kontakt li {
+		margin-left: 2em;
+	}
+	#univis-personenseite div.publications li h3,
+	#univis-personenseite div.lectures li h3
+	 {
+		display: inline;
+		background: #f9f9f9;
+		margin: 0.5em;
+		padding: 0;
+	}
+	#univis-personenseite div.publications div.pubdetails,
+	#univis-personenseite div.lectures div.lvdetails {
+		display: inline;
+		margin-left: 1em;
+	}
+
+	/*  ------------------------------------------------------
+	OSM-KARTE
+	--------------------------------------------------------*/
+
+	#map {
+	  height: 400px;
+	  width: 500px;
+	  padding: 0; margin: 0;
+	  border: 1px solid #C1DAD7;
+	}
+
+	.olControlNoSelect {
+		/*visibility:hidden;*/
+	}
+
+	  div[id = "OpenLayers.Layer.Markers_31"], div[id = "OpenLayers.Control.PanZoomBar_3_zoomin_innerImage"], div[id = "OpenLayers.Control.PanZoomBar_3_zoomout_innerImage"], div[id = "OpenLayers.Control.PanZoomBar_3_panup"], div[id = "OpenLayers.Control.PanZoomBar_3_panleft"], div[id = "OpenLayers.Control.PanZoomBar_3_panright"], div[id = "OpenLayers.Control.PanZoomBar_3_pandown"], div[id = "OpenLayers.Control.PanZoomBar_3_zoomin"], div[id = "OpenLayers.Control.PanZoomBar_3_zoomout"]{
+	  cursor: pointer !important;
+	}
+
+	div[id = "OpenLayers_Control_PanZoomBar_ZoombarOpenLayers.Map_4"] {
+		cursor: auto !important;
+	}
+
+	div[id = "OpenLayers.Control.Attribution_7"] {
+		font-family: Arial,sans-serif;
+		font-size:11px;
+	}
+
+	.olControlAttribution {
+		bottom:0em !important;
+	}
+
+
+
+	.olMapViewport {
+		cursor:-moz-grab;
+	}
+
+	.popuptitle {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		font-weight:bold;
+	}
+
+	.popuptext {
+	    font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+	}
+
+
+}

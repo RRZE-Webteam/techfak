@@ -1,0 +1,36 @@
+/*
+    Document   : sidebar
+    Created on : 21.10.2011, 11:47:06
+    Author     : Manager
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+ @media screen, projection
+{
+
+    /*  ------------------------------------------------------
+     * WP-Sidebar
+    --------------------------------------------------------*/
+
+    .sidebar-full {
+        background-color: #CFE1EF !important;
+    }
+
+    .sidebar-morethanfull {
+        background-color: #C43C43 !important;
+    }
+
+    .widget-notallowed {
+        background-color: #C43C43 !important;
+        background-image: none !important;
+        color: #FFFFFF !important;
+        text-shadow: none !important;
+    }
+
+}

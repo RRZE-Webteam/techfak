@@ -1,0 +1,22 @@
+/**
+ * Projekt Vorlagenkatalog 
+ *
+ * Basisstylesheet D7
+ *
+ * @mod_name        disable_search
+ * @mod_desc        Suchfeld ausblenden
+ *
+ * @copyright       Copyright 2005-2011, RRZE
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/)
+ * @link            http://www.vorlagen.uni-erlangen.de
+ * @package         css
+ * @version         3.0
+ * @lastmodified    08/2011
+ */
+ 
+@media screen, projection
+{
+	div#kopf div#suche {  
+		display: none;
+	} 
+}

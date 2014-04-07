@@ -1,0 +1,12 @@
+basemod_mediaqueries.css         Zusatzdesign für kleinere Bildschirmgrößen
+basemod_maxwidth.css             Begrenzung der Design-Breite
+basemod_zusatzinfo.css           Aktiviert Standard-Styling des Zusatzinfo-Blocks
+color_gelb.css					 Farbschema "gelb"
+color_gruen.css					 Farbschema "gruen"
+color_karibikgruen.css			 Farbschema "karibikgruen"
+color_hellblau.css				 Farbschema "hellblau"
+color_graublau.css				 Farbschema "graublau"
+color_orange.css				 Farbschema "orange"
+color_rot.css					 Farbschema "rot"
+basemod_disable_search.css       Suchfeld ausblenden
+basemod_disable_targetmenu.css   Zielgruppennavigation ausblenden

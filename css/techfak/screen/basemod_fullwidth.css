@@ -1,0 +1,17 @@
+/**
+ * Projekt Vorlagenkatalog
+ *
+ * Basisstylesheet Techfak
+ *
+ * @mod_name        fullwidth
+ * @mod_desc        Begrenzung der Design-Breite
+ *
+ * @copyright       Copyright 2005-2011, RRZE
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/)
+ * @link            http://www.vorlagen.uni-erlangen.de
+ * @package         css
+ * @version         3.0
+ * @lastmodified    11/2011
+ */
+
+@media screen, projection {}

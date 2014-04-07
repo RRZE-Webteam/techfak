@@ -1,0 +1,31 @@
+/**
+ * Projekt Vorlagenkatalog
+ *
+ * Basisstylesheet Techfak
+ *
+ * @mod_name        color_blau
+ * @mod_desc        Farbschema "blau"
+ *
+ * @copyright       Copyright 2005-2011, RRZE
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/)
+ * @link            http://www.vorlagen.uni-erlangen.de
+ * @package         css
+ * @version         3.0
+ * @lastmodified    11/2011
+ */
+
+@media screen, projection
+{
+
+	div#kopf div#hauptmenu ul {
+		padding: 1px 2px 2px 15px;
+		font-weight: bold;
+	}
+
+	div#kopf div#hauptmenu ul li {
+		display: inline;
+		padding: 0 0 0 12px;
+        background: url(../../../grafiken/techfak/menu-blau.gif) no-repeat 0 75%;
+	}
+
+}

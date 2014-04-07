@@ -1,0 +1,47 @@
+/**
+ * Projekt Vorlagenkatalog
+ *
+ * Basisstylesheet Techfak
+ *
+ * @mod_name        maxwidth
+ * @mod_desc        Begrenzung der Design-Breite
+ *
+ * @copyright       Copyright 2005-2011, RRZE
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/)
+ * @link            http://www.vorlagen.uni-erlangen.de
+ * @package         css
+ * @version         3.0
+ * @lastmodified    08/2011
+ */
+
+@media screen, projection
+{
+	div#seite {
+		max-width: 1200px; /* Maximale Breite in Pixeln */
+		/*---------*/
+		box-shadow: 0 0 15px rgba(0,0,0,0.6); /* CSS3 Schatten (nur in modernen Browsern) - falls unerwünscht, einfach auskommentieren */
+		border-width: 10px; /* gleichmäßiger Rand, damit wirkt Schatten besser */
+		/*---------*/
+		margin: 0 auto; /* notwendig, nicht ändern! */
+		position: relative; /* notwendig, nicht ändern! */
+		background-color: #FFF; /* notwendig für body: background-color! */
+	}
+
+    div#footer div#footerinfos div#tecmenu {
+        top: 86px;
+    }
+
+    div#titel {
+        margin-right: 265px;
+    }
+
+	div#content img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	body {
+		background-color: #ebeae1; /* kann nach Belieben geändert werden */
+	}
+
+}

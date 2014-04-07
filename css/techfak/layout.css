@@ -1,0 +1,35 @@
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) central stylesheet
+ * (de) Zentrales Stylesheet
+ *
+ * @copyright       Copyright 2005-2010, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.3
+ * @revision        $Revision: 1.2 $
+ * @lastmodified    $Date: 2012/06/18 09:59:32 $
+ */
+
+/* import core styles | Basis-Stylesheets einbinden */
+@import url(../../css/base.css);
+
+/* import screen layout | Screen-Layout einbinden */
+@import url(screen/basemod.css);
+@import url(screen/content.css);
+
+/*@import url(screen/basemod_color_gelb.css);*/
+/*@import url(screen/basemod_color_gruen.css);*/
+/*@import url(screen/basemod_color_karibikgruen.css);*/
+/*@import url(screen/basemod_color_hellblau.css);*/
+/*@import url(screen/basemod_color_graublau.css);*/
+/*@import url(screen/basemod_color_orange.css);*/
+/*@import url(screen/basemod_color_rot.css);*/
+@import url(screen/basemod_mediaqueries.css);
+@import url(screen/basemod_zusatzinfo.css);
+/*@import url(screen/basemod_disable_targetmenu.css);*/
+/*@import url(screen/basemod_disable_search.css);*/
+/*@import url(screen/basemod_maxwidth.css);*/

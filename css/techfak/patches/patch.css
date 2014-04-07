@@ -1,0 +1,106 @@
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) IE-Patch stylesheet
+ * (de) IE-Korrektur-Stylesheet
+ *
+ * @copyright       Copyright 2005-2010, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.3
+ * @revision        $Revision: 1.2 $
+ * @lastmodified    $Date: 2012/06/18 09:59:31 $
+ */
+
+/* Layout-independent adjustments | Layout-unabhängige Anpassungen ----------------------------------- */
+@import url(../../iehacks.css);
+
+/* Layout-dependent adjustments | Layout-abhängige Anpassungen --------------------------------------- */
+@media screen, projection
+{
+	/**
+	 * Workarounds zur Behebung von Fehlern
+	 * des Internet Explorer 7
+	 *
+	 * @hack: *:first-child+html
+	 * @version: 04/2011
+	*/
+	
+	*:first-child+html div#menu {
+		display: inline;
+		float: left;
+		top: 0em;
+		left: -10px;
+	}
+	*:first-child+html div#tecmenu { top: 20px !important;	}	
+	*:first-child+html div#footer { height: 1%;}
+	*:first-child+html div#footer div#footerinfos div#tecmenu {	right: 20px; } 
+	
+	*:first-child+html input, *:first-child+html textarea, *:first-child+html select {
+		padding: 3px 4px;
+		font-family: "Verdana", "Arial",  sans-serif;
+		border-style: solid;
+		border-width: 1px;
+		font-size: 1em;
+	}
+	
+	*:first-child+html input.radio, *:first-child+html input.checkbox {
+		border-style: none;
+		border-width: 0;
+		background: transparent;
+	}
+	
+	
+	/**
+	 * Workarounds zur Behebung von Fehlern
+	 * des Internet Explorer 6
+	 *
+	 * @hack: * html
+	 * @version: 04/2011
+	*/
+	
+	* html div#menu {
+		display: inline;
+		float: left;
+	}
+	
+	* html div#tecmenu { top: 20px !important; }
+	* html div#footer { height: 1%;	}
+	* html div#tecmenu {
+		right: 20px;
+		top: 0;
+		position: absolute !important;
+	} 
+	* html div#zusatzinfo {
+		display: none;
+		/* Der IE6 hat hier einen Bug der nicht ohne weiteres behebbar ist.
+			   Da die 3 Spalte ohnehin entfallen soll bei diesem Design, wird
+			   auch dessen Inhalt disabled. */	
+	}
+	* html input, * html textarea, * html select {
+		padding: 3px 4px;
+		font-family: "Verdana", "Arial",  sans-serif;
+		border-style: solid;
+		border-width: 1px;
+		font-size: 1em;
+	}
+	
+	* html input.radio, * html input.checkbox {
+		border-style: none;
+		border-width: 0;
+		background: transparent;
+	}
+	
+	
+	/**
+	 * Workaround zur transparenten PNG-
+	 * Darstellung im Internet Explorer 6
+	 *
+	 * @hack: pngfix
+	 * @version: 08/2011
+	*/
+	img, div { behavior: url(/iepngfix.htc) }
+
+}
